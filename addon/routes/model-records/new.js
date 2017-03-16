@@ -7,7 +7,7 @@ const {
 
 export default Route.extend(WriteMixin, {
   model() {
-    return this.admin.store.createRecord(this.paramsFor('model-records').name);
+    return this.store.createRecord(this.paramsFor('model-records').name);
   },
   templateAdminPath: 'admin/new'
 });

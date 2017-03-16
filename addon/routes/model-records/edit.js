@@ -9,7 +9,7 @@ const {
 
 export default Route.extend(WriteMixin, {
   model(params) {
-    return this.admin.store.find(this.paramsFor('model-records').name, params.id);
+    return this.store.find(this.paramsFor('model-records').name, params.id);
   },
   templateAdminPath: 'admin/edit',
   actions: {
