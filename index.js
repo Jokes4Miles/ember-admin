@@ -2,5 +2,9 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-admin'
+  name: 'ember-admin',
+  isDevelopingAddon(){
+    return true;
+  }
 };
+
