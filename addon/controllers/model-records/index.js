@@ -5,4 +5,8 @@ const {
   Controller
 } = Ember;
 
-export default Controller.extend(RecordTypeMixin);
+export default Controller.extend(RecordTypeMixin, {
+	queryParams: ['key', 'value'],
+	key: null,
+	value: null
+});
